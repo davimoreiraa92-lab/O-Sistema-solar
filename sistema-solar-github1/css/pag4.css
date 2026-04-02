@@ -1,0 +1,41 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(10, 107, 127);
+}
+.layout{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10vh 200vh 50vh;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+}
+nav{
+    background-color: black;
+    grid-area: header;
+}
+
+main{
+    color: azure;
+    background-color: rgb(35, 35, 35);
+    grid-area: main;
+}
+aside{
+    color: aliceblue;
+    background-color:  black;
+    grid-area: aside;
+}
+
+footer{
+    color: azure;
+    background-color: rgb(42, 42, 42);
+    grid-area: footer;
+}
+.col-md-4 img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+}

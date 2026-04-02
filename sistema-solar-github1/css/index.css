@@ -1,0 +1,138 @@
+html, body{
+    border: 3px solid rgba(68, 27, 218, 0.612);
+    border-style:outset;
+    box-sizing: border-box;
+    background-color: rgb(38, 11, 70);
+}
+.layout{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 250vh 70vh;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+header{
+    background-color: rgb(0, 0, 0);
+    grid-area: header;
+}
+.main-title {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Dá um toque mais moderno */
+}
+
+/* Container que segura a logo e o título */
+.header-top {
+    background-color: rgb(0, 0, 0);
+    padding: 20px 5%;      /* Espaço em cima/baixo e 5% nas laterais */
+    display: flex;         /* Habilita o modo de caixa flexível */
+    justify-content: flex-start; /* Alinha tudo no início (esquerda) */
+}
+
+.container-logo-titulo {
+    display: flex;         /* Coloca os itens internos lado a lado */
+    align-items: center;    /* Centraliza verticalmente a logo com o texto */
+}
+
+/* Estilo da Logo */
+.logo-img {
+    height: 60px;          /* Ajuste o tamanho da sua logo aqui */
+    width: auto;
+    margin-right: 340px;    /* Espaço entre a logo e o título */
+}
+
+
+
+main{
+    color: white;
+    background-color: rgb(0, 0, 0);
+   
+    grid-area: main;
+}
+.titulomain {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight:bold;
+    color: white;
+    text-shadow: 2px 1px white;
+    text-align: center;
+    padding: 50px;
+    margin: 40px;
+
+}
+.carousel-inner {
+    height: 80vh;
+    width: 150vh;
+    margin: 0 auto; /* centraliza horizontalmente */
+}
+
+#carouselExampleCaptions {
+    display: flex;
+    justify-content: center; /* centraliza o conteúdo interno */
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+
+.custom-caption h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.322);
+}
+
+
+.custom-caption p {
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+footer{
+    background-color: rgb(18, 18, 18);
+    text-align: center;
+}
+
+.cardsFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.cardsFooter .card{
+    max-width: 400px;
+}
+
+.cardsFooter .col-md-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardsFooter .card a{
+    color: white;
+    text-decoration: none;
+}
+
+.cardsFooter .card-body{
+    color: aliceblue;
+    background-color: black;
+}
+
+.paragrafo{
+    color: rgb(255, 255, 255);
+}

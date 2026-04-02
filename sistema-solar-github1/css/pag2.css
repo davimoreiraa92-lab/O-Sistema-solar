@@ -1,0 +1,108 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(10, 107, 127);
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 200vh 50vh;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+}
+nav{
+    background-color: black;
+    grid-area: nav;
+}
+
+.navbar {
+    background-color: #000000; 
+}
+
+.titulo-site {
+    white-space: nowrap;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Container que segura a logo e o título */
+.header-top {
+    background-color: rgb(0, 0, 0);
+    display: flex;         /* Habilita o modo de caixa flexível */
+    justify-content: flex-start; /* Alinha tudo no início (esquerda) */
+}
+
+.container-logo-titulo {
+    display: flex;         /* Coloca os itens internos lado a lado */
+    align-items: center;    /* Centraliza verticalmente a logo com o texto */
+}
+
+/* Estilo da Logo */
+.logo-img {
+    height: 60px;          /* Ajuste o tamanho da sua logo aqui */
+    width: auto;
+    margin-right: 50px;    /* Espaço entre a logo e o título */
+}
+
+
+
+
+
+main{
+    color: azure;
+    background-color: rgb(0, 0, 0);
+    grid-area: main;
+}
+main img{
+    height: 120vh;
+    width: 140vh;
+}
+footer{
+    color: azure;
+    background-color: rgb(42, 42, 42);
+    grid-area: footer;
+}
+
+
+
+.cardsFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 160px;
+}
+
+.cardsFooter .card{
+    max-width: 400px;
+}
+
+.cardsFooter .col-md-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardsFooter .card a{
+    color: white;
+    text-decoration: none;
+}
+
+.cardsFooter .card-body{
+    color: aliceblue;
+    background-color: black;
+}
+
+
+
+.col-md-4 img {
+    width: 100%;
+    height: 180px; /* escolha o tamanho ideal */
+    object-fit: cover;
+}
