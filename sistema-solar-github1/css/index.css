@@ -8,7 +8,8 @@ html, body{
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 250vh 70vh;
+    grid-template-rows: auto
+     300vh 80vh;
     grid-template-areas: 
     "header header"
     "main main"
@@ -35,6 +36,30 @@ header{
     display: flex;         /* Habilita o modo de caixa flexível */
     justify-content: flex-start; /* Alinha tudo no início (esquerda) */
 }
+av{
+    background-color: black;
+    grid-area: nav;
+}
+
+.navbar {
+    background-color: #000000; 
+}
+
+.titulo-site {
+    white-space: nowrap;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Container que segura a logo e o título */
+.header-top {
+    background-color: rgb(0, 0, 0);
+    display: flex;         /* Habilita o modo de caixa flexível */
+    justify-content: flex-start; /* Alinha tudo no início (esquerda) */
+}
 
 .container-logo-titulo {
     display: flex;         /* Coloca os itens internos lado a lado */
@@ -45,8 +70,10 @@ header{
 .logo-img {
     height: 60px;          /* Ajuste o tamanho da sua logo aqui */
     width: auto;
-    margin-right: 340px;    /* Espaço entre a logo e o título */
+    margin-right: 50px;    /* Espaço entre a logo e o título */
 }
+
+
 
 
 
@@ -99,6 +126,11 @@ main{
 .custom-caption p {
     font-size: 1.4rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.image
+ {
+    align-items: center;
 }
 
 footer{
