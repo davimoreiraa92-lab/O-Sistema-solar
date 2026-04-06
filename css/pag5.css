@@ -1,0 +1,43 @@
+.Curiosidades {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+
+  opacity: 0;
+}
+
+input:checked ~ .Curiosidades {
+  max-height: 200px;
+  opacity: 1;
+
+  margin-top: 8px;
+  padding: 10px;
+
+  background: rgba(59, 130, 246, 0.1); /*cor de fundo*/
+  border-left: 3px solid #3b82f6; /*cor estilo do Lado*/
+
+  border-radius: 6px; /*borda redonda*/
+  color: #e0f2fe;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+
+  color: #93c5fd; /*cor do texto*/
+
+  /*cores brilhates fofo*/
+  text-shadow:
+    0 0 5px #93c5fd,
+    0 0 10px #60a5fa,
+    0 0 20px #3b82f6,
+    0 0 40px #1d4ed8;
+
+  letter-spacing: 3px;
+}
