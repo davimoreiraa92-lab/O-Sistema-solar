@@ -8,8 +8,7 @@ html, body{
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto
-     300vh 80vh;
+    grid-template-rows: auto 310vh 80vh;
     grid-template-areas: 
     "header header"
     "main main"
@@ -96,7 +95,7 @@ main{
 }
 .carousel-inner {
     height: 80vh;
-    width: 150vh;
+    width: 190vh;
     margin: 0 auto; /* centraliza horizontalmente */
 }
 
@@ -131,6 +130,45 @@ main{
 .image
  {
     align-items: center;
+}
+
+.fatos{
+    display: flex;
+    justify-content:center;
+    margin: 30px;
+    padding: 30px;
+}
+
+.fatos img{
+    width: 800px;
+}
+.texto{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+   font-size: 30px;
+   margin: 30px ;
+   padding: 30px;
+}
+
+.texto p{
+    color: blueviolet;
+    font-size: 50px;
+    text-align: center;
+}
+
+.embarque{
+    margin: 30px;
+    text-align: center;
+}
+.embarque h1{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    font-size: 70px;
+}
+.embarque h2{
+    color: gold;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
 }
 
 footer{
