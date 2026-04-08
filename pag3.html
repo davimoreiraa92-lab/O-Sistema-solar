@@ -9,37 +9,46 @@
   </head>
   <body>
     <div class="layout"> 
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <!--NAV BAR-->
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Extras
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="pag8.html">Quiz</a></li>          
-            <li><a class="dropdown-item" href="pag9.html">Feedback</a></li>
-          </ul>
-        </li>
-      </ul>
-           <a class="navbar-brand" href="index.html">Inicio</a>
+       <nav class="navbar navbar-expand-lg navbar-dark"> <!-- NAV BAR-->
+       <div class="header-top">
+          <div class="container-logo-titulo">
+            <img src="img/Gemini_Generated_Image_xjdbs6xjdbs6xjdb.png" alt="Logo" class="logo-img"> <!--LOGO-->
+            <h1 class="titulo-site">O SISTEMA SOLAR</h1> <!--TITULO-->
+          </div>
+        </div>
+                
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown"> <!-- LINKS DAS PAG-->
+            
+          <a class="navbar-brand" href="index.html">Inicio</a>
           <a class="navbar-brand" href="pag2.html">Sol</a>
           <a class="navbar-brand" href="pag3.html">Planetas rochosos</a>
           <a class="navbar-brand" href="pag4.html">Planetas Gasosos</a>
-          <a class="navbar-brand" href="pag5.html">Curiosidades</a>
-          <a class="navbar-brand" href="pag6.html">Galeria</a>
-          <a class="navbar-brand" href="pag7.html">Objetos espaciaiais</a>
-    </div>
-  </div>
-</nav>
-        <main>
 
-                    <h3>PLANETAS ROCHOSOS</h3> 
+          <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <!-- DROPDOW + LINKS DAS PAG -->
+                    Muito mais
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="pag8.html">Quiz</a></li>          
+                    <li><a class="dropdown-item" href="pag9.html">Feedback</a></li>
+                    <li><a class="dropdown-item" href="pag5.html">Curiosidades</a></li>
+                    <li><a class="dropdown-item" href="pag6.html">Galeria</a></li>
+                    <li><a class="dropdown-item" href="pag7.html">Objetos espaciais</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+       </nav>
+        <main>
+<br>
+              <p class="texto geral">    <h3>PLANETAS ROCHOSOS</h3>  <br>
           <P> Os planetas rochosos, também chamados de planetas telúricos ou internos, são os quatro corpos celestes mais próximos do Sol. Diferente dos gigantes gasosos, eles possuem uma superfície sólida composta principalmente de rochas e metais, além de núcleos densos. <br>
                O Berço da Rocha: Planetas Internos
           Localizados entre o Sol e o Cinturão de Asteroides, esses planetas compartilham características semelhantes: são menores, possuem poucos ou nenhum satélite natural e não apresentam sistemas de anéis. </p> <br>
@@ -63,13 +72,15 @@
           Marte é um mundo desértico e gelado. Sua cor avermelhada característica vem da oxidação do ferro em seu solo (basicamente ferrugem). <br>
           * Exploração: É o planeta mais estudado por sondas e rovers, com o objetivo de encontrar sinais de vida passada.
           * Geografia Gigante: Abriga o Monte Olimpo, o maior vulcão do sistema solar, e o Valles Marineris, um desfiladeiro que deixaria o Grand Canyon minúsculo.
-          Comparativo dos Planetas Rochosos </P> <br> <br>
+          Comparativo dos Planetas Rochosos </P> <br> <br> </p>
          <table>
     <tr>
         <th>Planeta</th>
         <th>Diâmetro</th>
         <th>Temperatura Média</th>
         <th>Atmosfera Principal</th>
+        <th>Principais Luas</th>
+    
     </tr>
 
     <tr>
@@ -77,6 +88,7 @@
         <td>4.879 km</td>
         <td>167 °C</td>
         <td>Praticamente inexistente</td>
+        <td> Não possui</td>
     </tr>
 
     <tr>
@@ -84,6 +96,7 @@
         <td>12.104 km</td>
         <td>464 °C</td>
         <td>Dióxido de Carbono</td>
+        <td>não possui</td>
     </tr>
 
     <tr>
@@ -91,6 +104,7 @@
         <td>12.742 km</td>
         <td>15 °C</td>
         <td>Nitrogênio e Oxigênio</td>
+        <td>Lua</td>
     </tr>
 
     <tr>
@@ -98,14 +112,15 @@
         <td>6.779 km</td>
         <td>-65 °C</td>
         <td>Dióxido de Carbono</td>
+        <td>Fobos e Deimos</td>
     </tr>
-</table> <br>
+</table> <br> <br><br><br>
           <p>Estrutura Interna
-          Diferente dos gigantes gasosos, se você "cortasse" um planeta rochoso ao meio, veria camadas bem definidas:
-          * Crosta: A camada externa fina e sólida.
-          * Manto: Uma camada rochosa espessa e quente.
-          * Núcleo: Geralmente dividido em núcleo externo líquido e núcleo interno
-           metálico sólido (Ferro e Níquel).</p>
+          Diferente dos gigantes gasosos, se você "cortasse" um planeta rochoso ao meio, veria camadas bem definidas: <br>
+          * Crosta: A camada externa fina e sólida. <br>
+          * Manto: Uma camada rochosa espessa e quente. <br>
+          * Núcleo: Geralmente dividido em núcleo externo líquido e núcleo interno,
+           metálico e sólido (Ferro e Níquel).</p>
         </main>
        <aside><img src="img/2406-mercurio-super-site.webp" width="400px" alt=""><br> 
         <img src="img/Venus_globe.webp" width="300px" alt=""> <br>
@@ -144,7 +159,7 @@
              </div>
            </div> 
     </div>
-       <p> Fontes das pesquisas: Wikipédia, Brasil Escola, Google web, Toda Matéria. <br>
+       <p class="final"> Fontes das pesquisas: Wikipédia, Brasil Escola, Google web, Toda Matéria. <br>
            Ferramentas utilizadas na programação do site: CSS, JS, IMG, VISUAL CODE, LIVE SHARE, GIT. <br>
          Participantes do projeto: Davi Araújo Moreira da Silva, Gabrielly Ferreira da Silva, Gabriel Menezes Souza, Rômulo da Silva Menezes<br> <br>
        </p>
