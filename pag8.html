@@ -1,45 +1,229 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>quiz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz</title>
 
-    <div class="layout"> 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        NAV BAR
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap" rel="stylesheet">
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="css/pag8.css">
+</head>
+
+<body>
+
+ <div class="layout">
+
+   <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg navbar-dark"> <!-- NAV BAR-->
+
+      <div class="header-top">
+        <div class="container-logo-titulo">
+          <img src="img/Gemini_Generated_Image_xjdbs6xjdbs6xjdb.png" alt="Logo" class="logo-img"> <!--LOGO-->
+          <h1 class="titulo-site">O SISTEMA SOLAR</h1> <!--TITULO-->
+        </div>
+      </div>
+            
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown"> <!-- LINKS DAS PAG-->
+        
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <a class="navbar-brand" href="pag2.html">Sol</a>
+      <a class="navbar-brand" href="pag3.html">Planetas rochosos</a>
+      <a class="navbar-brand" href="pag4.html">Planetas Gasosos</a>
+
       <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Extras
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="pag8.html">Quiz</a></li>          
-            <li><a class="dropdown-item" href="pag9.html">Feedback</a></li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <!-- DROPDOW + LINKS DAS PAG -->
+                Muito mais
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="pag8.html">Quiz</a></li>          
+                <li><a class="dropdown-item" href="pag9.html">Feedback</a></li>
+                <li><a class="dropdown-item" href="pag5.html">Curiosidades</a></li>
+                <li><a class="dropdown-item" href="pag6.html">Galeria</a></li>
+                <li><a class="dropdown-item" href="pag7.html">Exploração espacial</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-          <a class="navbar-brand" href="index.html">Inicio</a>
-          <a class="navbar-brand" href="pag2.html">Sol</a>
-          <a class="navbar-brand" href="pag3.html">Planetas rochosos</a>
-          <a class="navbar-brand" href="pag4.html">Planetas Gasosos</a>
-          <a class="navbar-brand" href="pag5.html">Curiosidades</a>
-          <a class="navbar-brand" href="pag6.html">Galeria</a>
-          <a class="navbar-brand" href="pag7.html">Objetos espaciaiais</a>
+
+        </div>
+      </div>
+
+    </nav>
+
+  <main>
+
+    <div class="quiz">
+
+      <h1>Quiz: Sistema Solar</h1>
+
+        <!-- PERGUNTA 1 -->
+        <div class="pergunta">
+            <h2>1. Qual é o maior planeta do Sistema Solar?</h2>
+
+            <input type="radio" id="q1a" name="q1">
+            <label for="q1a">Terra</label>
+
+            <input type="radio" id="q1b" name="q1">
+            <label for="q1b">Marte</label>
+
+            <input type="radio" id="q1c" name="q1">
+            <label for="q1c">Júpiter</label>
+
+        </div>
+
+        <!-- PERGUNTA 2 -->
+        <div class="pergunta">
+            <h2>2. Qual planeta é conhecido como o planeta vermelho?</h2>
+
+            <input type="radio" id="q2a" name="q2">
+            <label for="q2a">Vênus</label>
+
+            <input type="radio" id="q2b" name="q2">
+            <label for="q2b">Marte</label>
+
+            <input type="radio" id="q2c" name="q2">
+            <label for="q2c">Júpiter</label>
+        </div>
+
+        <!-- PERGUNTA 3 -->
+        <div class="pergunta">
+            <h2>3. Qual é o planeta mais próximo do Sol?</h2>
+
+            <input type="radio" id="q3a" name="q3">
+            <label for="q3a">Mercúrio</label>
+
+            <input type="radio" id="q3b" name="q3">
+            <label for="q3b">Terra</label>
+
+            <input type="radio" id="q3c" name="q3">
+            <label for="q3c">Saturno</label>
+        </div>
+
+        <!-- PERGUNTA 4 -->
+        <div class="pergunta">
+            <h2>4. Qual planeta possui anéis visíveis?</h2>
+
+            <input type="radio" id="q4a" name="q4">
+            <label for="q4a">Marte</label>
+
+            <input type="radio" id="q4b" name="q4">
+            <label for="q4b">Saturno</label>
+
+            <input type="radio" id="q4c" name="q4">
+            <label for="q4c">Vênus</label>
+        </div>
+
+        <!-- PERGUNTA 5 -->
+        <div class="pergunta">
+            <h2>5. Qual é o único planeta conhecido por abrigar vida?</h2>
+
+            <input type="radio" id="q5a" name="q5">
+            <label for="q5a">Marte</label>
+
+            <input type="radio" id="q5b" name="q5">
+            <label for="q5b">Terra</label>
+
+            <input type="radio" id="q5c" name="q5">
+            <label for="q5c">Netuno</label>
+        </div>
+
     </div>
-  </div>
-</nav>
-        <main>main tiulo quiz</main>
-        <footer>footer cards links dados do site</footer> 
-  </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+
+  </main>
+
+   <section class="respostas">
+
+      <h1>RESPOSTAS</h1>
+
+            <h2>1. Qual é o maior planeta do Sistema Solar?</h2>
+            <p><span>Júpiter</span></p>
+
+          
+            <h2>2. Qual planeta é conhecido como o planeta vermelho?</h2>
+            <span>Marte</span>
+
+            <h2>3. Qual é o planeta mais próximo do Sol?</h2>
+            <span>Mercúrio</span>
+
+            <h2>4. Qual planeta possui anéis visíveis?</h2>
+            <span>Saturno</span>
+
+            <h2>5. Qual é o único planeta conhecido por abrigar vida?</h2>
+            <span>Terra</span>
+
+             <div class="proximo">
+        <h3>Proximo: pagina final.</h3>
+      </div>
+
+      </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="cardsFooter">
+          <br><br>
+           <div class="card mb-3" >
+              <div class="row g-0">
+               <div class="col-md-4">
+                <a href="index.html"><img src="img/Gemini_Generated_Image_xjdbs6xjdbs6xjdb.png" alt="18rem"></a>
+               </div>
+                 <div class="col-md-8">
+                <div class="card-body">
+                 <h5 class="card-title">INICIO</h5>
+                <p class="card-text"> <a href="index.html">Volte para a página inicial. <br><br><br></a> </p>
+               <p class="card-text"><small class="text-body-secondary"></small></p>
+               </div>
+               </div>
+             </div>
+           </div>
+           <div class="card mb-3" >
+              <div class="row g-0">
+               <div class="col-md-4">
+                <a href="pag9.html"><img src="img/satelite  GIF by European Space Agency - ESA.gif" alt="18rem"></a>
+               </div>
+                 <div class="col-md-8">
+                <div class="card-body">
+                 <h5 class="card-title">FEEDBACK</h5>
+                <p class="card-text"> <a href="pag9.html">conclusão</a> </p>
+               <p class="card-text"><small class="text-body-secondary"></small></p>
+               </div>
+               </div>
+             </div>
+           </div> 
+    </div>
+    <br><br><br>
+       <p class="paragrafo"> 
+        <a href="index.html">Inicio</a> 
+        <a href="pag2.html">sol</a>
+        <a href="pag3.html">Planetas rochosos</a>
+        <a href="pag4.html">planetas  gasosos</a>
+        <a href="pag5.html">Curiosidades</a>
+        <a href="pag6.html">Galeria</a>
+        <a href="pag7.html">Exploração espacial</a>
+        <a href="pag8.html">Quiz</a>
+        <a href="pag9.html">Feedback</a>
+        <br>
+        Fontes das pesquisas: Wikipédia, Brasil Escola, Google web, Toda Matéria. <br>
+           Ferramentas utilizadas na programação do site: CSS, JS, IMG, VISUAL CODE, LIVE SHARE, GIT. <br>
+         Participantes do projeto: Davi Araújo Moreira da Silva, Gabrielly Ferreira da Silva, Gabriel Menezes Souza, Rômulo da Silva Menezes <br> <br>
+      <br>
+       2026 &copy; - Projeto Sistema Solar</p>
+  </footer>
+
+ </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

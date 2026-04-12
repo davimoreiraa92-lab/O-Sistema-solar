@@ -1,18 +1,22 @@
 html, body{
-    margin: 0;
-    padding: 0;
+    border: 3px solid  rgba(0, 111, 111, 0.663);
+    border-style:outset;
     box-sizing: border-box;
-    background-color: rgb(10, 107, 127);
+    background-color: rgb(38, 11, 70);
 }
 .layout{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 10vh 160vh 60vh;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto 60vh auto auto 70vh;
     grid-template-areas: 
     "nav nav"
+    "titulogasosos titulogasosos"
     "main aside"
+    "tabela tabela"
     "footer footer";
 }
+
+
 .header-top {
     background-color: rgb(0, 0, 0);
     padding: 20px 5%; 
@@ -42,7 +46,7 @@ nav{
 .logo-img {
     height: 60px;          
     width: auto;
-    margin-right: 50px;    /* Espaço entre a logo e o título */
+    margin-right: 50px;   
 }
 .collapse{
     font-family: 'Orbitron', sans-serif;
@@ -55,20 +59,134 @@ nav{
     background-color: #000000;
 }
 
-main{
-    color: azure;
-    background-color: rgb(35, 35, 35);
-    grid-area: main;
+
+                                       /* section */
+.titulogasosos{
+    grid-area: titulogasosos;
+    color: rgba(0, 255, 255, 0.884);
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h3{
-    text-align: center
-    ;}
+.titulogasosos h1{
+    font-size: 90px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    margin: 40px;
+    text-shadow: 0 0 15px rgb(114, 195, 191);
+}
+.gasosos{
+    color: rgb(69, 124, 127);
+}
+.textogasosos{
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 1000px;
+    margin: 50px;
+    padding: 20px;
+    border: 5px solid rgb(117, 142, 140);
+    border-radius: 20px;
+    box-shadow: 
+    0 0 15px rgba(56, 225, 222, 0.616);
+}
+
+
+                                       /* main */
+main{
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 22, 22);
+    grid-area: main;
+    padding: 40px;
+}
+
+main h3{
+    font-size: 30px;
+    margin-top: 240px;
+    color:  rgba(0, 255, 255, 0.884);
+}
+
+
+                                      /* aside */
 aside{
     color: aliceblue;
     background-color:  black;
     grid-area: aside;
+} 
+
+aside img{
+    margin-top: 150px;
+}
+.tabela{
+    grid-area: tabela;
+    background-color: #000000;
+    color: white;
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    
+}
+.tabela table{
+   margin-left: auto;
+   margin-right: auto;
+}
+.tabela h1{
+    text-align: center;
+    margin: 100px;
+    color:  rgba(0, 255, 255, 0.884); 
+}
+.tabela h3{
+    text-align: center;
+    margin: 50px;
+    color:  rgba(0, 255, 255, 0.884);
+}
+.tabela ul{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 700px;
+    background-color: #1e1e1e;
 }
 
+th, td {
+    border: 1px solid #444;
+    padding: 20px;
+    text-align: center;
+}
+
+th {
+    background-color:  rgba(0, 255, 255, 0.362);
+    color: white;
+}
+
+tr:hover {
+    background-color: #333;
+}
+
+.proximo{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    margin: 30px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 350px;
+    
+}
+.curiosidades{
+    color:purple;
+}
+
+
+
+                                     /* footer */
 footer{
     color: azure;
     background-color: rgb(42, 42, 42);
@@ -78,54 +196,36 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
-    gap: 160px;
-}
 
+}
 .cardsFooter .card{
     max-width: 400px;
+    margin: 10%;
+    margin-top: 10px;
 }
-
 .cardsFooter .col-md-4 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .cardsFooter .card a{
     color: white;
     text-decoration: none;
 }
-
 .cardsFooter .card-body{
     color: aliceblue;
     background-color: black;
 }
 .col-md-4 img {
     width: 100%;
-    height: 180px; 
+    height: 180px;
     object-fit: cover;
 }
-table {
-    border-collapse: collapse;
-    width: 700px;
-    background-color: #1e1e1e;
-}
-
-th, td {
-    border: 1px solid #444;
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background-color: #3ec7bc;
-    color: white;
-}
-
-tr:hover {
-    background-color: #333;
-}
 .paragrafo{
+    color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 20px;
 }
+
+
+

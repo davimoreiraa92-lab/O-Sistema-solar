@@ -8,7 +8,7 @@ html, body{
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 560vh 80vh;
+    grid-template-rows: auto 600vh 80vh;
     grid-template-areas: 
     "nav nav"
     "main main"
@@ -94,10 +94,18 @@ main img{
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
+    line-height: 2.0;
     margin: 10%;
+}
+.textosol h2{
+     line-height: 1.5;
+}
+.textosol h4{
+     line-height: 1.5;
 }
 .textosol h3{
     color: rgb(255, 68, 0);
+    line-height: 2.0;
 }
 .textosol img{
     height: 700px;
