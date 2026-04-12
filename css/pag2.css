@@ -189,3 +189,14 @@ footer{
     text-align: center;
     font-size: 20px;
 }
+
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 900px) {
+
+   .layout {
+        grid-template-columns: 1fr;
+         grid-template-rows: auto auto auto;
+    }
+}

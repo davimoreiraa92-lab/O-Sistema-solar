@@ -225,3 +225,90 @@ footer{                                            /* FOOTER */
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
+
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 900px) {
+
+    .layout {
+        grid-template-columns: 1fr;
+         grid-template-rows: auto auto auto;
+    }
+
+    .titulo-site {
+        font-size: 20px;
+    }
+    .titulomain h1{
+        font-size: 30px;
+        margin: 5%;
+    }
+    .carousel-inner {                             /* CARROSEL */
+        height: 30vh;
+        width: 54vh;
+        margin: 0 auto;
+    }
+    .custom-caption h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .custom-caption p {
+        display: none;
+    }
+    .fatos img{
+    width: 54vh;
+    height: 30vh;
+    object-fit: cover;
+    }
+    .texto p, h3{
+        font-size: 15px;
+    }
+    .texto{
+        margin: 1px;
+    }
+    .fatos{
+        display: inline;
+    }
+    .video iframe{
+        width: 54vh;
+        height: 30vh;
+        object-fit: cover;
+        margin-top: 10vh;
+    }
+    .embarque h1, h2{
+        font-size: 15px;
+    }    
+    .embarque{
+        margin: 2px;
+    }
+    .cardsFooter {
+        width: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cardsFooter .card{
+        width: 30vh;
+    }
+
+    .cardsFooter .col-md-4 img {
+        width: 30vh;
+        height: 20vh;
+    }
+
+    .cardsFooter .card a{
+        width: 30vh;
+    }
+
+    .cardsFooter .card-body{
+        width: 30vh;
+    }
+    .card-body h5{
+        font-size: 15px;
+    }
+    .cardsFooter .card-text{
+        font-size: 10px;
+    }
+
+}
