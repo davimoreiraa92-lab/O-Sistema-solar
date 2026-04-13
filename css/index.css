@@ -236,6 +236,7 @@ footer{                                            /* FOOTER */
          grid-template-rows: auto auto auto;
     }
 
+    
     .titulo-site {
         font-size: 20px;
     }
@@ -243,7 +244,7 @@ footer{                                            /* FOOTER */
         font-size: 30px;
         margin: 5%;
     }
-    .carousel-inner {                             /* CARROSEL */
+    .carousel-inner {                         
         height: 30vh;
         width: 54vh;
         margin: 0 auto;

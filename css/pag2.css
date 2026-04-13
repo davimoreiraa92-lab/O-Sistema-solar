@@ -199,4 +199,79 @@ footer{
         grid-template-columns: 1fr;
          grid-template-rows: auto auto auto;
     }
+    .titulo-site {
+        font-size: 20px;
+    }
+    .titulomain h1{
+        font-size: 30px;
+        margin: 5px;
+        padding: 0;
+    }
+    .titulomain{
+        margin: 2px;
+        padding: 0;
+    } 
+    main img{
+        width: 52vh;
+        height: 52vh;
+    }
+    .textosol{
+        margin: 5px;
+    }
+    .textosol h2, h3, li, ul{
+        font-size: 10px;
+    }
+    .textosol h4{
+        font-size: 9px;
+    }
+    .textosol img{
+        height: 30vh;
+        width: 30vh;
+        margin-left: 60px;
+    }
+
+    .tabelasol{
+        height: 30vh;
+        width: 50vh;
+        margin-left: 10px;
+        margin-right: 0;
+        margin-top: 10vh;
+    }
+    th, td {
+        font-size: 10px;
+        padding: 0
+    }
+    th {
+        font-size: 15px;
+        padding: 0;
+    }
+
+
+
+
+    .cardsFooter {
+        width: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardsFooter .card{
+        width: 30vh;
+    }
+    .cardsFooter .col-md-4 img {
+        width: 30vh;
+        height: 20vh;
+    }
+    .cardsFooter .card a{
+        width: 30vh;
+    }
+    .cardsFooter .card-body{
+        width: 30vh;
+    }
+    .card-body h5{
+        font-size: 15px;
+    }
+    .cardsFooter .card-text{
+        font-size: 10px;
+    }
 }

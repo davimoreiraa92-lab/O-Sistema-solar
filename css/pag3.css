@@ -240,56 +240,103 @@ footer{
 
 @media (max-width: 768px) {
 
-  /* Evita corte do conteúdo pelo navbar */
-  .container.mt-5 {
-    margin-top: 100px !important;
-    padding: 10px;
-  }
+   .layout {
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+    "nav nav"
+    "section section"
+    "aside main"
+    "tabela tabela"
+    "footer footer";
+    }
+    .titulo-site {
+        font-size: 17px;
+    }
+    .titulorochosos h1{
+        font-size: 22px;
+        margin: 10px;
+    }
+    .titulorochosos .textorochosos{
+        font-size: 15px;
+        width: 40vh;
+    }
+    .titulorochosos{
+        display:inline;
+    }
 
-  /* Título do formulário */
-  h2 {
-    font-size: 32px !important;
-  }
 
-  /* Formulário mais compacto */
-  form {
-    padding: 15px;
-  }
+    aside img{
+        margin-top: 10px;
+        height: 100px;
+        width: 130px;
+    }
 
-  /* Inputs mais leves para celular */
-  input,
-  select,
-  textarea {
-    font-size: 14px;
-    padding: 10px;
-  }
 
-  /* Estrelas menores */
-  .star-rating {
-    font-size: 35px;
-  }
+    main{
+        margin: 0;
+        padding: 0;
+    }
+    main h2, li, ul{
+        font-size: 10px;
+        margin: 10px;
+        padding: 0;
+    }
+    main h3{
+        font-size: 15px;
+        margin-top: 0;
+        margin: 20px;
+    }
+    
 
-  /* Logo menor */
-  .logo-img {
-    height: 40px;
-    margin-right: 15px;
-  }
 
-  /* Título do site menor */
-  .titulo-site {
-    font-size: 18px;
-  }
+    
+    .tabela{
+        height: 30vh;
+        width: 50vh;
+        margin-left: 10px;
+        margin-right: 0;
+        margin-top: 10vh;
+    }
+    th, td {
+        font-size: 10px;
+        padding: 0
+    }
+    th {
+        font-size: 15px;
+        padding: 0;
+    }
 
-  /* Navbar em formato melhor para celular */
-  .container-logo-titulo {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-  }
-}
 
-/* Evita scroll horizontal bugado no mobile */
-body {
-  overflow-x: hidden;
+
+
+    .cardsFooter {
+        width: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardsFooter .card{
+        width: 30vh;
+    }
+    .cardsFooter .col-md-4 img {
+        width: 30vh;
+        height: 20vh;
+    }
+    .cardsFooter .card a{
+        width: 30vh;
+    }
+    .cardsFooter .card-body{
+        width: 30vh;
+    }
+    .card-body h5{
+        font-size: 15px;
+    }
+    .cardsFooter .card-text{
+        font-size: 10px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }
 
