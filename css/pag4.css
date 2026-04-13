@@ -1,8 +1,10 @@
+
 html, body{
     border: 3px solid  rgba(0, 111, 111, 0.663);
     border-style:outset;
     box-sizing: border-box;
     background-color: rgb(38, 11, 70);
+      overflow-x: hidden;
 }
 .layout{
     display: grid;
@@ -229,7 +231,7 @@ footer{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 900x) {
 
    .layout {
         grid-template-rows: auto auto auto auto auto;
@@ -300,22 +302,26 @@ footer{
 
 
 
-    .cardsFooter {
+     .cardsFooter {
         width: 30vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
     .cardsFooter .card{
         width: 30vh;
     }
+
     .cardsFooter .col-md-4 img {
         width: 30vh;
         height: 20vh;
     }
+
     .cardsFooter .card a{
         width: 30vh;
     }
+
     .cardsFooter .card-body{
         width: 30vh;
     }
@@ -326,10 +332,5 @@ footer{
         font-size: 10px;
     }
 
-    body {
-        overflow-x: hidden;
-    }
 }
-
-
-
+ 

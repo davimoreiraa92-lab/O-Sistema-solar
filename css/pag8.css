@@ -1,6 +1,7 @@
 html, body{
     background-color: black;
     box-sizing: border-box;
+     overflow-x: hidden;
 }
 .layout{
     display: grid;
@@ -152,15 +153,99 @@ footer{
 
 @media (max-width: 900px) {
 
-    .hero h1 {
-        font-size: 40px;
-    }
+  /* ===== RESET ===== */
+  * {
+    max-width: 100%;
+  }
 
-    .grid-missoes {
-        grid-template-columns: 1fr;
-    }
+  /* ===== NAVBAR ===== */
+  .titulo-site {
+    font-size: 16px;
+    text-align: center;
+  }
 
-    .tecnologias ul {
-        grid-template-columns: 1fr;
-    }
+  .logo-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .container-logo-titulo {
+    justify-content: center;
+  }
+
+  /* ===== QUIZ ===== */
+  .quiz {
+    padding: 20px 10px;
+  }
+
+  .quiz h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  /* PERGUNTAS */
+  .pergunta {
+    margin-bottom: 40px;
+  }
+
+  .pergunta h2 {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  /* OPÇÕES (RADIO + TEXTO) */
+  input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2); /* aumenta um pouco sem exagero */
+  }
+
+  label {
+    font-size: 16px;
+    margin: 10px 0;
+    display: block; /* 🔥 quebra linha */
+    text-align: left;
+  }
+
+  /* ===== RESPOSTAS ===== */
+  .respostas {
+    padding: 20px 10px;
+  }
+
+  .respostas h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .respostas h2 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .respostas span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* ===== PRÓXIMO ===== */
+  .proximo {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  /* ===== FOOTER ===== */
+  .cardsFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardsFooter .card {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .paragrafo {
+    font-size: 12px;
+    padding: 10px;
+  }
 }
